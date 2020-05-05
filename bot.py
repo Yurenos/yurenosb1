@@ -1,6 +1,7 @@
 import discord
 import random
 from discord.ext import commands
+import os
 
 client = commands.Bot( command_prefix='.')
 
@@ -121,6 +122,6 @@ async def f(ctx):
 			await ctx.send('Выпал ОРЁЛ! Повезёт в следущий раз')'''
 
 
-token = open('token.txt').readline()
-client.run(token)
+token = os.environ.get('BOT_TOKEN')
+client.run(str(token))
 
