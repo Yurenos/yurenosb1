@@ -1,6 +1,6 @@
 import vk_api
 import random
-token = TOKEN
+token = "ad18d3b427e0896c4545c1a8a1692e473b1f2b703674c478b092ca825109120b3c2bf68f7dfed667c2f45"
 
 
 vk = vk_api.VkApi(token=token)
